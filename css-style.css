@@ -1,0 +1,428 @@
+/* Header style */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+      }
+
+      header .container {
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      footer {
+        background-color: #222222;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+      }
+
+      footer .container {
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      /* Add table style for hiring process */
+      .container {
+        margin: 0 auto;
+      }
+
+      table {
+        text-align: left;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+
+      td {
+        padding: 25px;
+        border: 0px;
+      }
+
+      td:first-child {
+        text-align: left;
+      }
+
+      th {
+        padding: 15px;
+        background-color: #25b3c3;
+    }
+
+      .container table tr {
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        position: relative;
+      }
+
+      .container table tr:hover {
+        background-color: #99d5dd;
+        color: #333;
+        opacity: 0.8;
+      }
+
+      .container table tr:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ff3067;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+
+      .container table tr:hover:before {
+        transform: scaleX(1);
+        background-color: #ff3067;
+      }
+
+      .container table tr h4 {
+        margin-bottom: 5px;
+      }
+
+      /* Add Apple-inspired CSS styles */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav li {
+        display: inline;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #banner {
+        position: relative;
+        background-image: url("images/bg-img.png");
+        background-size: cover;
+        height: 850px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      #banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      #banner .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      #about,
+      #jobs,
+      #culture-benefits,
+      #contact {
+        padding: 40px 0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 15px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 36px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        #banner {
+          height: 200px;
+        }
+
+        .logo {
+          width: 80px;
+        }
+
+        nav a {
+          font-size: 14px;
+          padding: 8px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      /* Swiper Slider styles */
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .swiper-button-next {
+        right: 10px;
+      }
+
+      .swiper-button-prev {
+        left: 10px;
+      }
+
+      #photo-slider {
+        position: relative;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 700px;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #faf7f2;
+        color: #333;
+      }
+
+      .dark {
+        background-color: #121212;
+        color: #fff;
+      }
+
+      .dark h1,
+      .dark h2,
+      .dark h3,
+      .dark h4 {
+        color: #fff;
+      }
+
+      .dark .icon,
+      .dark a {
+        color: #fff;
+      }
+
+      .dark .intro {
+        background-color: #282828;
+      }
+
+      .dark .textbox {
+        background-color: #282828;
+      }
+
+      .dark #jobs a {
+        color: #fff;
+      }
+
+      .dark #contact a {
+        color: #fff;
+      }
+
+      .checkbox {
+        opacity: 0;
+        position: absolute;
+      }
+
+      .checkbox-label {
+        background-color: #111;
+        width: 50px;
+        height: 26px;
+        border-radius: 50px;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .fa-moon {
+        color: #f1c40f;
+      }
+
+      .fa-sun {
+        color: #f39c12;
+      }
+
+      .checkbox-label .ball {
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+
+      .checkbox:checked+.checkbox-label .ball {
+        transform: translateX(24px);
+      }
+
+      #jobs a {
+        color: #484b6a;
+      }
+
+      #culture-benefits {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        text-align: left;
+      }
+
+      #contact a {
+        color: #333333;
+      }
+
+      .intro {
+        text-align: left;
+        background-color: #ff0044;
+        border-radius: 0 0 30% 30%;
+        padding: 80px;
+        color: #fff;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+
+      .textbox-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .textbox {
+        display: inline-block;
+        width: 400px;
+        height: 230px;
+        background-color: #25b3c3;
+        color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        vertical-align: middle;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .input-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      #myInput {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px 20px 12px 50px;
+        border: 1px solid #ddd;
+        margin-bottom: 30px;
+        border-radius: 25px;
+        background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg
+xmlns="http://www.w3.org/2000/svg"viewBox="0 0 512 512"%3E%3Cpath fill="%23000"d="M492.501 442.88L362.875 313.255c-7.769-7.769-17.067-13.352-27.159-16.85C379.877 273.621 397 233.865 397 192 397 86.119 310.881 0 205 0S13 86.119 13 192c0 105.881 86.119 192 192 192 41.865 0 81.621-17.123 110.405-47.015 3.498 10.092 9.081 19.39 16.85 27.159l129.625 129.625c18.745 18.745 49.137 18.746 67.882 0l22.624-22.624c18.745-18.745 18.746-49.137 0-67.882zM205 336c-70.695 0-128-57.305-128-128S134.305 80 205 80s128 57.305 128 128-57.305 128-128 128z"%3E%3C/path%3E%3C/svg%3E');
+background-position: 10px center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            padding-left: 40px;
+        }
+
+        #myjobsTable {
+          border-collapse: collapse;
+          margin: 0 auto;
+          font-size: 16px;
+          width: 40%;
+        }
+
+        #myjobsTable th,
+        #myjobsTable td {
+          text-align: left;
+          padding: 15px;
+        }
+
+        #myjobsTable tr.header,
+        #myjobsTable tr:hover {
+          background-color: #99d5dd;
+          opacity: 0.9;
+          text-align: left;
+        }
