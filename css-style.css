@@ -5,7 +5,7 @@
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 10px;
+        padding: 0.6250em;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,20 +14,20 @@
 
       header .container {
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 1.2500em;
       }
 
       footer {
         background-color: #222222;
-        padding: 10px;
+        padding: 0.6250em;
         text-align: center;
-        font-size: 14px;
+        font-size: 0.8750em;
         color: #fff;
       }
 
       footer .container {
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 0.6250em;
       }
 
       /* Add table style for hiring process */
