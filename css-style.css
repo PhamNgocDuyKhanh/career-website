@@ -247,9 +247,9 @@
         #banner {
           background-size: contain;
         }
-      }
+      
       #banner {
-      background-image: url("images/bg-img-xxxsmall.png"); 
+      background-image: url("images/bg-img-xxsmall.png"); 
       background-position: center; 
       color: #000; 
       font-size: 0.8em; 
@@ -267,7 +267,7 @@
       align-items: flex-start; 
       justify-content: flex-start; 
       }
-      
+      }
 
       /* Swiper Slider styles */
       .swiper-button-next,
