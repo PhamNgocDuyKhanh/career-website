@@ -211,7 +211,7 @@
         }
       }
       
-      @media screen and (max-width: 40.625em) {
+      @media screen and (max-width: 25em) {
       .textbox {
       width: 90vw; /* increased the width */
       height: auto; /* let the height adjust to the content */
