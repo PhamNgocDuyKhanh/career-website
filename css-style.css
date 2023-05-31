@@ -208,6 +208,33 @@
         p {
           font-size: 0.875em;
         }
+            
+       #banner {
+        position: relative;
+        background-image: url("images/bg-img.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      #banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      #banner .container {
+        position: relative;
+        z-index: 2;
+      }
       }
       
       @media screen and (max-width: 62.201vw) {
