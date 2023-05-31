@@ -184,7 +184,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media (max-width: 48em) {
+      @media (min-width:40.625em) (max-width: 256em) {
         h1 {
           font-size: 2.25em;
         }
@@ -194,7 +194,7 @@
         }
 
         #banner {
-          height: 12.5em;
+          height: 43.75em;
         }
 
         .logo {
@@ -211,12 +211,12 @@
         }
       }
       
-      @media screen and (max-width: 37.5em) {
+      @media screen and (max-width: 40.625em) {
       .textbox {
       width: 90vw; /* increased the width */
       height: auto; /* let the height adjust to the content */
-      font-size: 0.8em; /* reduced the font size */
-      border-radius: 0.5em; /* reduced the border radius */
+      font-size: 0.5em; /* reduced the font size */
+      border-radius: 0.3em; /* reduced the border radius */
       }
       }
 
