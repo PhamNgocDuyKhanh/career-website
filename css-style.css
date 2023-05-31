@@ -113,7 +113,7 @@
       }
 
       #banner {
-        position: relative;
+        position: absolute; /* Changed to absolute */
         background-image: url("images/bg-img.png");
         background-size: cover;
         display: flex;
@@ -135,7 +135,7 @@
       }
 
       #banner .container {
-        position: relative;
+        position: absolute; /* Changed to absolute */
         z-index: 2;
       }
 
@@ -149,7 +149,7 @@
       .container {
         max-width: 100%;
         margin: 0 auto;
-        padding: 0 1.25em;
+        padding: 0 1.459vw;
       }
 
       h1,
@@ -450,7 +450,7 @@
 
       #myInput {
         width: 80%;
-        font-size: 0.5em;
+        font-size: 0.625em;
         padding: 1.167vw 1.459vw 1.167vw 3.651vw;
         border: 1px solid #ddd;
         margin-bottom: 1.875em;
