@@ -184,7 +184,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media (min-width:47.587vw) and (max-width: 300vw) {
+      @media (min-width:56.266vw) and (max-width: 300vw) {
         h1 {
           font-size: 2.25em;
         }
@@ -193,10 +193,10 @@
           font-size: 1.5em;
         }
 
-        #banner {
+/*removed         #banner {
           height: 51.322vw;
-        }
-
+        } */
+            
         .logo {
           width: 5em;
         }
@@ -211,11 +211,11 @@
         }
       }
       
-      @media screen and (max-width: 29.236vw) {
+      @media screen and (max-width: 55.056vw) {
       .textbox {
-      width: 90vw; /* increased the width */
-      font-size: 0.5em; /* reduced the font size */
-      border-radius: 0.366vw; /* reduced the border radius */
+      width: auto; 
+      font-size: 0.3125em; 
+      border-radius: 0.366vw; 
       }
       
 
