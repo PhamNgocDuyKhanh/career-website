@@ -192,9 +192,9 @@
           font-size: 1.5em;
         }
 
-/*removed         #banner {
-          height: 51.322vw;
-        } */
+        #banner {
+          height: auto;
+        }
             
         .logo {
           width: 5.841vw;
