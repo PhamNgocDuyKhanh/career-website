@@ -116,7 +116,7 @@
         position: relative;
         background-image: url("images/bg-img.png");
         background-size: cover;
-        height: 70vh;
+        height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -184,7 +184,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media (min-width:65.948vw) and (max-width: 300vw) {
+      @media /*(min-width:65.948vw) and */ (max-width: 300vw) {
         h1 {
           font-size: 2.25em;
         }
