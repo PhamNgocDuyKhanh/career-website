@@ -210,9 +210,8 @@
         }
             
        #banner {
-        position: relative;
-        background-image: url("images/bg-img.png");
         background-size: cover;
+        height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
