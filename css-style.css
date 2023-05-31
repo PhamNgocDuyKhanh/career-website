@@ -184,7 +184,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media /*(min-width:65.948vw) and */ (max-width: 300vw) {
+      @media /*(min-width:65.948vw) and */ (max-width: 56.266vw) {
         h1 {
           font-size: 2.25em;
         }
@@ -237,7 +237,7 @@
       }
       }
       
-      @media screen and (max-width: 62.201vw) {
+/*      @media screen and (max-width: 65.948vw) {
       .logo {
           width: 2.921vw;
         }
@@ -246,8 +246,8 @@
       width: auto; 
       font-size: 0.3125em; 
       border-radius: 0.366vw; 
-      } */
-            
+      } /
+         //keep   
        .textbox-container {
         display: flex;
         flex-direction: column;
@@ -271,7 +271,7 @@
         overflow: hidden;
       }
       
-/*      #banner {
+//remove      #banner {
           background-size: cover;
         }
       
@@ -293,8 +293,8 @@
       line-height: normal; 
       align-items: flex-start; 
       justify-content: flex-start; 
-      } Removed */
-      }
+      } Removed 
+      } */
 
       /* Swiper Slider styles */
       .swiper-button-next,
