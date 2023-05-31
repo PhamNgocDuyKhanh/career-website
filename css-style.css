@@ -116,7 +116,7 @@
         position: relative;
         background-image: url("images/bg-img.png");
         background-size: cover;
-        height: 53.125em;
+        height: 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -217,6 +217,28 @@
       height: auto; /* let the height adjust to the content */
       font-size: 0.8em; /* reduced the font size */
       border-radius: 0.5em; /* reduced the border radius */
+      }
+      }
+
+      #banner {
+      height: auto; /* let the height adjust to the content */
+      background-image: url("images/bg-img-small.png"); /* use a smaller image */
+      background-position: center; /* center the image */
+      color: #000; /* change the text color */
+      font-size: 0.8em; /* reduce the font size */
+      padding: 10px; /* add some padding */
+      box-sizing: border-box; /* include padding in height calculation */
+      border-radius: 10px; /* add some border radius */
+      margin-bottom: 20px; /* add some margin below */
+      box-shadow: inset -5px -5px -5px rgba(0,0,0,0.2); /* add some inner shadow */
+      overflow-wrap: break-word; /* prevent long words from overflowing */
+      word-break: break-word; /* break words at any character */
+      hyphens: auto; /* add hyphens to broken words */
+      text-align: justify; /* justify the text */
+      text-justify: inter-word; /* adjust the spacing between words */
+      line-height: normal; /* reset the line height */
+      align-items: flex-start; /* align items to the top of the banner */
+      justify-content: flex-start; /* align content to the left of the banner */
       }
       }
 
