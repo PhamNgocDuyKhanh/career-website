@@ -113,7 +113,7 @@
       }
 
       #banner {
-        position: absolute; /* Changed to absolute */
+        position: relative;
         background-image: url("images/bg-img.png");
         background-size: cover;
         display: flex;
@@ -135,7 +135,7 @@
       }
 
       #banner .container {
-        position: absolute; /* Changed to absolute */
+        position: relative;
         z-index: 2;
       }
 
@@ -244,7 +244,10 @@
         overflow: hidden;
       }
       
-
+        #banner {
+          background-size: contain;
+        }
+      }
       #banner {
       background-image: url("images/bg-img-xxxsmall.png"); 
       background-position: center; 
@@ -450,7 +453,7 @@
 
       #myInput {
         width: 80%;
-        font-size: 0.625em;
+        font-size: 0.75em;
         padding: 1.167vw 1.459vw 1.167vw 3.651vw;
         border: 1px solid #ddd;
         margin-bottom: 1.875em;
