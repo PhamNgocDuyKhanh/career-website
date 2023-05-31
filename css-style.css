@@ -210,6 +210,15 @@
           font-size: 0.875em;
         }
       }
+      
+      @media screen and (max-width: 37.5em) {
+      .textbox {
+      width: 90vw; /* increased the width */
+      height: auto; /* let the height adjust to the content */
+      font-size: 0.8em; /* reduced the font size */
+      border-radius: 0.5em; /* reduced the border radius */
+      }
+      }
 
       /* Swiper Slider styles */
       .swiper-button-next,
@@ -370,11 +379,11 @@
 
       .textbox {
         display: inline-block;
-        width: 25em;
-        height: 14.375em;
+        width: 80vw;
+        height: 20vhm;
         background-color: #25b3c3;
         color: white;
-        padding: 10px;
+        padding: 0.625em;
         margin-bottom: 0.625em;
         font-size: 1em;
         line-height: 1.4;
