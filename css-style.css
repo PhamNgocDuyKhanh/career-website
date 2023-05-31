@@ -116,12 +116,13 @@
         position: relative;
         background-image: url("images/bg-img.png");
         background-size: cover;
-        height: 300vh;
+        height: 150vh;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #fff;
-        text-align: center;  
+        text-align: center;
+        margin-bottom: 5px;
       }
 
       #banner::before {
