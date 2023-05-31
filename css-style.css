@@ -184,7 +184,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media (min-width:40.625em) and (max-width: 256em) {
+      @media (min-width:47.587vw) and (max-width: 300vw) {
         h1 {
           font-size: 2.25em;
         }
@@ -194,7 +194,7 @@
         }
 
         #banner {
-          height: 43.75em;
+          height: 51.322vw;
         }
 
         .logo {
@@ -211,25 +211,24 @@
         }
       }
       
-      @media screen and (max-width: 25em) {
+      @media screen and (max-width: 29.236vw) {
       .textbox {
       width: 90vw; /* increased the width */
       font-size: 0.5em; /* reduced the font size */
-      border-radius: 0.3em; /* reduced the border radius */
+      border-radius: 0.366vw; /* reduced the border radius */
       }
       
 
       #banner {
-      height: auto; /* let the height adjust to the content */
       background-image: url("images/bg-img-small.png"); /* use a smaller image */
       background-position: center; /* center the image */
       color: #000; /* change the text color */
       font-size: 0.8em; /* reduce the font size */
-      padding: 10px; /* add some padding */
+      padding: 0.732vw; /* add some padding */
       box-sizing: border-box; /* include padding in height calculation */
-      border-radius: 10px; /* add some border radius */
-      margin-bottom: 20px; /* add some margin below */
-      box-shadow: inset -5px -5px -5px rgba(0,0,0,0.2); /* add some inner shadow */
+      border-radius: 0.732vw; /* add some border radius */
+      margin-bottom: 1.459vw; /* add some margin below */
+      box-shadow: inset -0.366vw -0.366vw -0.366vw rgba(0,0,0,0.2); /* add some inner shadow */
       overflow-wrap: break-word; /* prevent long words from overflowing */
       word-break: break-word; /* break words at any character */
       hyphens: auto; /* add hyphens to broken words */
@@ -246,8 +245,8 @@
       .swiper-button-prev {
         position: absolute;
         top: 50%;
-        width: 2.5em;
-        height: 2.5em;
+        width: 2.179vw;
+        height: 2.179vw;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -259,11 +258,11 @@
       }
 
       .swiper-button-next {
-        right: 0.625em;
+        right: 0.732vw;
       }
 
       .swiper-button-prev {
-        left: 0.625em;
+        left: 0.732vwm;
       }
 
       #photo-slider {
@@ -272,7 +271,7 @@
 
       .swiper-container {
         width: 100%;
-        height: 43.75em;
+        height: 51.322vw;
       }
 
       .swiper-slide {
@@ -386,16 +385,16 @@
         text-align: left;
         background-color: #ff0044;
         border-radius: 0 0 30% 30%;
-        padding: 5em;
+        padding: 5.841vw;
         color: #fff;
         overflow: hidden;
-        margin-bottom: 1.875em;
+        margin-bottom: 2.179vw;
       }
 
       .textbox-container {
         display: flex;
         justify-content: center;
-        gap: 1.875em;
+        gap: 2.179vw;
       }
 
       .textbox {
@@ -404,13 +403,13 @@
         height: 20vhm;
         background-color: #25b3c3;
         color: white;
-        padding: 0.625em;
-        margin-bottom: 0.625em;
+        padding: 0.732vw;
+        margin-bottom: 0.732vw;
         font-size: 1em;
         line-height: 1.4;
         vertical-align: middle;
         box-sizing: border-box;
-        border-radius: 1.25em;
+        border-radius: 1.459vw;
         overflow: hidden;
       }
 
