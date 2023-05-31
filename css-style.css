@@ -183,7 +183,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media (min-width:56.266vw) and (max-width: 300vw) {
+      @media (min-width:65.948vw) and (max-width: 300vw) {
         h1 {
           font-size: 2.25em;
         }
@@ -210,7 +210,7 @@
         }
       }
       
-      @media screen and (max-width: 54.678vw) {
+      @media screen and (max-width: 62.201vw) {
       .logo {
           width: 2.921vw;
         }
@@ -225,7 +225,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2.179vw;
+        gap: 2.179vw 0;
       }
 
       .textbox {
