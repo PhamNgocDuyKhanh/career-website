@@ -116,7 +116,6 @@
         position: relative;
         background-image: url("images/bg-img.png");
         background-size: cover;
-        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -246,7 +245,7 @@
       }
       
         #banner {
-          background-size: contain;
+          background-size: cover;
         }
       
       #banner {
