@@ -220,7 +220,7 @@
       
 
       #banner {
-      background-image: url("images/bg-img-small.png"); /* use a smaller image */
+      background-image: url("images/bg-img-xxsmall.png"); /* use a smaller image */
       background-position: center; /* center the image */
       color: #000; /* change the text color */
       font-size: 0.8em; /* reduce the font size */
@@ -243,7 +243,7 @@
       /* Swiper Slider styles */
       .swiper-button-next,
       .swiper-button-prev {
-        position: absolute;
+        position: relative;
         top: 50%;
         width: 2.179vw;
         height: 2.179vw;
@@ -424,7 +424,7 @@
 
       #myInput {
         width: 80%;
-        font-size: 1em;
+        font-size: 0.75em;
         padding: 1em 1.25em 1em 3.125em;
         border: 1px solid #ddd;
         margin-bottom: 1.875em;
@@ -433,8 +433,8 @@
 xmlns="http://www.w3.org/2000/svg"viewBox="0 0 512 512"%3E%3Cpath fill="%23000"d="M492.501 442.88L362.875 313.255c-7.769-7.769-17.067-13.352-27.159-16.85C379.877 273.621 397 233.865 397 192 397 86.119 310.881 0 205 0S13 86.119 13 192c0 105.881 86.119 192 192 192 41.865 0 81.621-17.123 110.405-47.015 3.498 10.092 9.081 19.39 16.85 27.159l129.625 129.625c18.745 18.745 49.137 18.746 67.882 0l22.624-22.624c18.745-18.745 18.746-49.137 0-67.882zM205 336c-70.695 0-128-57.305-128-128S134.305 80 205 80s128 57.305 128 128-57.305 128-128 128z"%3E%3C/path%3E%3C/svg%3E');
 background-position: 0.625em center;
             background-repeat: no-repeat;
-            background-size: 1.25em;
-            padding-left: 2.5em;
+            background-size: 1.459vw;
+            padding-left: 2.921vw;
         }
 
         #myjobsTable {
