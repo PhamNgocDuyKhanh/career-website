@@ -5,7 +5,7 @@
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 0.6250em;
+        padding: 0.5em;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -266,7 +266,10 @@
       } 
       
       @media screen and (max-width: 767px) and (max-width: 1023px) {
-      .logo {
+       header {
+          font-size: 0.8em;
+         }
+       .logo {
           width: 20px; /* fallback value */
           width: 2.601vh;
         }
