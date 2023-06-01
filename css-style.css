@@ -185,7 +185,7 @@
         margin-bottom: 0.3125em;
       }
 
-      @media /*(min-width:65.948vw) and */ (max-width: 56.266vw) {
+      @media (min-width: 1024px) {
         h1 {
           font-size: 2.25em;
         }
@@ -194,12 +194,81 @@
           font-size: 1.5em;
         }
 
-     /*   #banner {
-          height: auto;
-        } Removed */
             
         .logo {
           width: 5.841vw;
+        }
+
+        nav a {
+          font-size: 0.875em;
+          padding: 0.5em;
+        }
+
+        p {
+          font-size: 0.875em;
+        }
+            
+       #banner {
+        background-size: cover;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+             
+      }
+
+      #banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      #banner .container {
+        position: relative;
+        z-index: 2;
+      }
+      
+
+       .textbox-container {
+        display: flex;
+        justify-content: center;
+        gap: 2.179vw 0;
+      }
+
+      .textbox {
+        display: inline-block;
+        width: 39.011vw;
+        height: auto;
+        background-color: #25b3c3;
+        color: white;
+        padding: 0.494em;
+        font-size: 0.875em;
+        line-height: 1.4;
+        vertical-align: middle;
+        box-sizing: border-box;
+        border-radius: 0.925em;
+      }      
+      } 
+      
+      @media screen and (max-width: 767px) and (max-width: 1023px) {
+      .logo {
+          width: 40px; /* fallback value */
+          width: 3.901vw;
+        }
+      
+        h1 {
+          font-size: 1.75em;
+        }
+
+        h2 {
+          font-size: 1.25em;
         }
 
         nav a {
@@ -237,19 +306,9 @@
         position: relative;
         z-index: 2;
       }
-      }
       
-/*      @media screen and (max-width: 65.948vw) {
-      .logo {
-          width: 2.921vw;
-        }
-            
-      /* Removed.textbox {
-      width: auto; 
-      font-size: 0.3125em; 
-      border-radius: 0.366vw; 
-      } /
-         //keep   
+      
+
        .textbox-container {
         display: flex;
         flex-direction: column;
@@ -263,40 +322,14 @@
         height: auto;
         background-color: #25b3c3;
         color: white;
-        padding: 0.732vw;
-        margin-bottom: 0.732vw;
-        font-size: 1em;
+        padding: 0.494em;
+        font-size: 0.875em;
         line-height: 1.4;
         vertical-align: middle;
         box-sizing: border-box;
-        border-radius: 1.459vw;
-        overflow: hidden;
-      }
-      
-//remove      #banner {
-          background-size: cover;
-        }
-      
-      #banner {
-      background-image: url("images/bg-img-xxsmall.png"); 
-      background-position: center; 
-      color: #000; 
-      font-size: 0.8em; 
-      padding: 0.732vw; 
-      box-sizing: border-box; 
-      border-radius: 0.732vw; 
-      margin-bottom: 1.459vw; 
-      box-shadow: inset -0.366vw -0.366vw -0.366vw rgba(0,0,0,0.2); 
-      overflow-wrap: break-word; 
-      word-break: break-word; 
-      hyphens: auto; 
-      text-align: justify; 
-      text-justify: inter-word; 
-      line-height: normal; 
-      align-items: flex-start; 
-      justify-content: flex-start; 
-      } Removed 
-      } */
+        border-radius: 0.925em;
+      }      
+      } 
 
       /* Swiper Slider styles */
       .swiper-button-next,
