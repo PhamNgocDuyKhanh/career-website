@@ -139,7 +139,7 @@
       #banner .container {
         position: relative;
         z-index: 2;
-        margin-bottom: 2em; 
+        margin-bottom: 1vh; 
       }
 
       #about,
@@ -283,7 +283,7 @@
             
        #banner {
         background-size: cover;
-        height: 40vh;
+        height: 38vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -306,6 +306,7 @@
       #banner .container {
         position: relative;
         z-index: 2;
+        margin-bottom: 1vh; 
       }
       
       
