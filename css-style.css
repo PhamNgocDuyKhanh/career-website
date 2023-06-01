@@ -168,7 +168,7 @@
       }
 
       h2 {
-        font-size: 2.5em;
+        font-size: 2em;
       }
 
       p {
@@ -259,8 +259,8 @@
       
       @media screen and (max-width: 767px) and (max-width: 1023px) {
       .logo {
-          width: 40px; /* fallback value */
-          width: 3.901vw;
+          width: 20px; /* fallback value */
+          width: 2.601vh;
         }
       
         h1 {
@@ -282,7 +282,7 @@
             
        #banner {
         background-size: cover;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -314,6 +314,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 2.179vw 0;
+        align-items: center;
       }
 
       .textbox {
