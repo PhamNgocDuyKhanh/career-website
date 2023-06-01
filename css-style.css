@@ -139,6 +139,7 @@
       #banner .container {
         position: relative;
         z-index: 2;
+        margin-bottom: 2em; 
       }
 
       #about,
@@ -282,7 +283,7 @@
             
        #banner {
         background-size: cover;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -328,7 +329,8 @@
         line-height: 1.4;
         vertical-align: middle;
         box-sizing: border-box;
-        border-radius: 0.925em;
+        border-radius: 1em;
+        text-align: justify; 
       }      
       } 
 
@@ -515,7 +517,7 @@
 
       #myInput {
         width: 80%;
-        font-size: 0.75em;
+        font-size: 0.8em;
         padding: 1.167vw 1.459vw 1.167vw 3.651vw;
         border: 1px solid #ddd;
         margin-bottom: 1.875em;
