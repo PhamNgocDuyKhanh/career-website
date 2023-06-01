@@ -256,6 +256,7 @@
         border-radius: 0.925em;
       }
             
+        #myInput {
         margin-bottom: 1.875em;
         border-radius: 1.5625em;
         background-image: url('images/search-icon.gif');
