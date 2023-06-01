@@ -254,7 +254,20 @@
         vertical-align: middle;
         box-sizing: border-box;
         border-radius: 0.925em;
-      }      
+      }
+            
+        margin-bottom: 1.875em;
+        border-radius: 1.5625em;
+        background-image: url('images/search-icon.gif');
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0 12px 60px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        background-size: 3%;
+        }
       } 
       
       @media screen and (max-width: 767px) and (max-width: 1023px) {
