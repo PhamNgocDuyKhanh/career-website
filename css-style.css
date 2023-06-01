@@ -515,20 +515,17 @@
       }
 
       #myInput {
-        width: 80%;
-        font-size: 0.8em;
-        padding: 1.167vw 1.459vw 1.167vw 3.651vw;
-        border: 1px solid #ddd;
         margin-bottom: 1.875em;
         border-radius: 1.5625em;
-background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg
-xmlns="http://www.w3.org/2000/svg"viewBox="0 0 512 512"%3E%3Cpath fill="%23000"d="M492.501 442.88L362.875 313.255c-7.769-7.769-17.067-13.352-27.159-16.85C379.877 273.621 397 233.865 397 192 397 86.119 310.881 0 205 0S13 86.119 13 192c0 105.881 86.119 192 192 192 41.865 0 81.621-17.123 110.405-47.015 3.498 10.092 9.081 19.39 16.85 27.159l129.625 129.625c18.745 18.745 49.137 18.746 67.882 0l22.624-22.624c18.745-18.745 18.746-49.137 0-67.882zM205 336c-70.695 0-128-57.305-128-128S134.305 80 205 80s128 57.305 128 128-57.305
-128-128
-128z"%3E%3C/path%3E%3C/svg%3E');
-        background-position: 0.732vw center;
+        background-image: url('images/search-icon.gif');
+        background-position: 20px center;
         background-repeat: no-repeat;
-        background-size: 1.459vw;
-        padding-left: 2.921vw;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0 12px 60px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        background-size: 5%;
         }
 
         #myjobsTable {
