@@ -282,7 +282,7 @@
             
        #banner {
         background-size: cover;
-        height: 50vh;
+        height: 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -465,9 +465,7 @@
         justify-content: center;
       }
 
-      .container {
-        text-align: left;
-      }
+/* removed code */
 
       #contact a {
         color: #333333;
@@ -505,6 +503,7 @@
         overflow: hidden;
       }
 
+/* add table filter */
       * {
         box-sizing: border-box;
       }
