@@ -146,6 +146,17 @@
       #contact {
         padding: 0em 0;
       }
+      #contact a {
+        color: #333333;
+      }
+      #jobs a {
+        color: #484b6a;
+      }
+
+      #culture-benefits {
+        display: flex;
+        justify-content: center;
+      }
 
       h1,
       h2,
@@ -176,6 +187,16 @@
 
       li {
         margin-bottom: 0.3125em;
+      }
+/* Intro Box styles */
+      .intro {
+        text-align: left;
+        background-color: #ff0044;
+        border-radius: 0 0 30% 30%;
+        padding: 5.841vw;
+        color: #fff;
+        overflow: hidden;
+        margin-bottom: 2.179vw;
       }
 
       @media (min-width: 1024px) {
@@ -233,7 +254,6 @@
        .textbox-container {
         display: flex;
         justify-content: center;
-        gap: 2.179vw 0;
       }
 
       .textbox {
@@ -248,6 +268,8 @@
         vertical-align: middle;
         box-sizing: border-box;
         border-radius: 0.925em;
+        margin: 1.5vw;
+        text-align: center; 
       }
             
         #myInput {
@@ -325,7 +347,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2.179vw 0;
         align-items: center;
       }
 
@@ -341,8 +362,9 @@
         vertical-align: middle;
         box-sizing: border-box;
         border-radius: 1em;
+        margin: 1.5vh;
         text-align: center; 
-      }      
+      }     
       } 
 
       /* Swiper Slider styles */
@@ -384,6 +406,7 @@
         background-position: center;
       }
 
+/* Dark Mode styles */
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
       * {
@@ -469,54 +492,7 @@
         transform: translateX(1.5em);
       }
 
-      #jobs a {
-        color: #484b6a;
-      }
-
-      #culture-benefits {
-        display: flex;
-        justify-content: center;
-      }
-
-/* removed code */
-
-      #contact a {
-        color: #333333;
-      }
-
-      .intro {
-        text-align: left;
-        background-color: #ff0044;
-        border-radius: 0 0 30% 30%;
-        padding: 5.841vw;
-        color: #fff;
-        overflow: hidden;
-        margin-bottom: 2.179vw;
-      }
-
-      .textbox-container {
-        display: flex;
-        justify-content: center;
-        gap: 2.179vw;
-      }
-
-      .textbox {
-        display: inline-block;
-        width: 80vw;
-        height: 20vhm;
-        background-color: #25b3c3;
-        color: white;
-        padding: 0.732vw;
-        margin-bottom: 0.732vw;
-        font-size: 1em;
-        line-height: 1.4;
-        vertical-align: middle;
-        box-sizing: border-box;
-        border-radius: 1.459vw;
-        overflow: hidden;
-      }
-
-/* add table filter */
+/* table filter */
       * {
         box-sizing: border-box;
       }
