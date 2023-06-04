@@ -210,7 +210,7 @@
         }
  
         .logo {
-          width: 5.841vw;
+          width: 5.8;
         }
 
         nav a {
@@ -260,8 +260,8 @@
         width: 39.011vw;
         height: auto;
         background-color: #25b3c3;
-        color: white;
-        padding: 0.494em;
+        color: #fff;
+        padding: 0.5em;
         font-size: 0.875em;
         line-height: 1.4;
         vertical-align: middle;
@@ -341,7 +341,7 @@
         height: auto;
         background-color: #25b3c3;
         color: #fff;
-        padding: 0.5;
+        padding: 0.5em;
         font-size: 0.875em;
         line-height: 1.4;
         vertical-align: middle;
