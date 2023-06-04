@@ -486,10 +486,10 @@
         background-repeat: no-repeat;
         width: 80%;
         font-size: 1em;
-        padding: 12px 0 12px 50px;
+        padding: 12px 0 12px 30px;
         border: 1px solid #ddd;
         margin-bottom: 12px;
-        background-size: 10px;
+        background-size: 30px;
       }
 
       #myInput:hover {
