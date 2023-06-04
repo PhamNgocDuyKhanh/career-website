@@ -208,10 +208,6 @@
         h2 {
           font-size: 1.5em;
         }
- 
-        .logo {
-          width: 5.8;
-        }
 
         nav a {
           font-size: 0.875em;
@@ -280,10 +276,6 @@
           font-size: 0.5em;
           text-align: left;
          }
-       .logo {
-          width: 5px; /* fallback value */
-          width: 0.5vh;
-        }
       
         h1 {
           font-size: 1.75em;
