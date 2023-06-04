@@ -249,7 +249,9 @@
         margin-bottom: 2.179vh;
       }
       
-
+      #myInput {
+       background-position: 10px center;
+      }
        .textbox-container {
         display: flex;
         justify-content: center;
