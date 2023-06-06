@@ -516,3 +516,6 @@
           opacity: 0.9;
           text-align: left;
         }
+* {
+scroll-behavior: smooth;
+}
