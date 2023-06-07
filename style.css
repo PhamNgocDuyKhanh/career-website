@@ -198,7 +198,7 @@
         padding: 5.841vw;
         color: #fff;
         overflow: hidden;
-        margin-bottom: 2.179vw;
+        margin-bottom: 8vh;
       }
 
       @media (min-width: 1024px) {
@@ -273,7 +273,7 @@
         vertical-align: middle;
         line-height: 1.4;
         height: auto;
-        width: 35vw;
+        width: 30vw;
         border-radius: 1.5em;
         color: white;
         padding: 1em;
@@ -351,8 +351,6 @@
         z-index: 2;
       }
       
-      
-
       .cards {
         display: flex;
         flex-direction: column;
@@ -361,15 +359,9 @@
         gap: 8vh;
       }
 
-      .cards .first{
-        background-color: #b4c1c5 ;
-      }
-
-      .cards .second{
-        background-color: #b4c1c5 ;
-      }
-
-      .cards .third{
+      .cards .first,
+      .cards .second,
+      .cards .third {
         background-color: #b4c1c5 ;
       }
 
