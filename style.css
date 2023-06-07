@@ -252,15 +252,9 @@
         gap: 15px;
       }
 
-      .cards .first{
-        background-color: #b4c1c5 ;
-      }
-
-      .cards .second{
-        background-color: #b4c1c5 ;
-      }
-
-      .cards .third{
+      .cards .first,
+      .cards .second,
+      .cards .third {
         background-color: #b4c1c5 ;
       }
 
