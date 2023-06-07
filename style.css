@@ -246,25 +246,58 @@
         margin-bottom: 2.179vh;
       }
             
-       .textbox-container {
+      .cards {
         display: flex;
         justify-content: center;
+        gap: 15px;
       }
 
-      .textbox {
+      .cards .first{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .second{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .third{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .card {
         display: inline-block;
-        width: 39.011vw;
-        height: auto;
-        background-color: #25b3c3;
-        color: #fff;
-        padding: 0.5em;
-        font-size: 0.875em;
-        line-height: 1.4;
-        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         box-sizing: border-box;
-        border-radius: 0.925em;
-        margin: 1.5vw;
-        text-align: center; 
+        vertical-align: middle;
+        line-height: 1.4;
+        height: auto;
+        width: 35vw;
+        border-radius: 1.5em;
+        color: white;
+        padding: 1em;
+        cursor: pointer;
+        transition: 400ms;
+      }
+
+      .cards .card p.tip {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+
+      .cards .card p.second-text {
+        font-size: .9em;
+        text-align: justify;
+      }
+
+      .cards .card:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      .cards:hover > .card:not(:hover) {
+        filter: blur(10px);
+        transform: scale(0.9, 0.9);
       }
       } 
       
@@ -320,29 +353,61 @@
       
       
 
-       .textbox-container {
+      .cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 8vh;
       }
 
-      .textbox {
+      .cards .first{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .second{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .third{
+        background-color: #b4c1c5 ;
+      }
+
+      .cards .card {
         display: inline-block;
-        width: 80%;
-        height: auto;
-        background-color: #25b3c3;
-        color: #fff;
-        padding: 0.5em;
-        font-size: 0.875em;
-        line-height: 1.4;
-        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         box-sizing: border-box;
-        border-radius: 1em;
-        margin: 1.5vh;
-        text-align: center; 
-      }     
-      } 
+        vertical-align: middle;
+        line-height: 1.4;
+        height: auto;
+        width: 60%;
+        border-radius: 1.5em;
+        color: white;
+        padding: 1em;
+        cursor: pointer;
+        transition: 400ms;
+      }
+
+      .cards .card p.tip {
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+
+      .cards .card p.second-text {
+        font-size: .9em;
+        text-align: justify;
+      }
+
+      .cards .card:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      .cards:hover > .card:not(:hover) {
+        filter: blur(10px);
+        transform: scale(0.9, 0.9);
+      }
 
       /* Swiper Slider styles */
       .swiper-button-next,
