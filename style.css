@@ -467,7 +467,7 @@
         background-color: #282828;
       }
 
-      .dark .textbox {
+      .dark .cards {
         background-color: #282828;
       }
 
@@ -540,7 +540,7 @@
         font-size: 0.8em;
         padding: 12px 0 12px 50px;
         border: 1px solid #ddd;
-        margin-bottom: 12px;
+        margin-bottom: 8vh;
         background-size: 25px;
       }
 
