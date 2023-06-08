@@ -467,7 +467,9 @@
         background-color: #282828;
       }
 
-      .dark .cards {
+      .dark .cards .first,
+      .dark .cards .second,
+      .dark .cards .third {
         background-color: #282828;
       }
 
