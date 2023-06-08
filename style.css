@@ -16,15 +16,16 @@
 
       header .container {
         margin: 0 auto;
-        padding: 0 1.2500em;
+        padding: 0 1.3em;
       }
 
       footer {
         background-color: #222222;
         padding: 0.6250em;
         text-align: center;
-        font-size: 0.8750em;
+        font-size: 0.87em;
         color: #fff;
+        height: 40px;
       }
 
       footer .container {
