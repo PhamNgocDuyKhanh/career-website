@@ -560,8 +560,8 @@
       }
 
       #myInput {
-        margin-bottom: 1.875em;
-        border-radius: 1.5625em;
+        margin-bottom: 2em;
+        border-radius: 2em;
         background-image: url('images/search-icon.png');
         background-position: 20px center;
         background-repeat: no-repeat;
@@ -574,20 +574,20 @@
       }
 
       #myInput:hover {
-        box-shadow: 0 0 1em #00000013;
+        box-shadow: 0 0 1em #00000025;
       }
 
         #myjobsTable {
           border-collapse: collapse;
           margin: 0 auto;
           font-size: 1em;
-          width: 40%;
+          width: 50%;
         }
 
         #myjobsTable th,
         #myjobsTable td {
           text-align: left;
-          padding: 0.9375em;
+          padding: 0.8em;
         }
 
         #myjobsTable tr.header,
