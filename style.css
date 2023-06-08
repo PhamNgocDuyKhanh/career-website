@@ -30,7 +30,9 @@
         margin: 0 auto;
         padding: 0 0.6em;
       }
-
+      .logo {
+      padding-left: 0.8vw;
+      }
       /* Add table style for hiring process */
       .container {
         margin: 0 auto;
@@ -149,6 +151,7 @@
       }
       #contact a {
         color: #333333;
+        margin: 0.3vw
       }
       #jobs a {
         color: #484b6a;
