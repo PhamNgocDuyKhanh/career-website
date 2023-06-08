@@ -151,8 +151,16 @@
       }
       #contact a {
         color: #333333;
-        margin: 0.3vw
+        margin: 0.3vw;
+        top: 0px;
+        position: relative;
+        &:hover {
+          transition: all 0.2s ease-out;
+          box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.3);
+          top: -4px;
       }
+      }
+      
       #jobs a {
         color: #484b6a;
       }
