@@ -63,3 +63,22 @@
             el: '.swiper-scrollbar',
           },
         })
+// Get all the card elements
+var cards = document.querySelectorAll(".cards .card");
+
+// Loop through each card element
+for (var i = 0; i < cards.length; i++) {
+// Add a touchstart event listener
+cards[i].addEventListener("touchstart", function() {
+// Toggle the hover class
+this.classList.toggle("hover");
+});
+}
+
+/* Add a hover class with the same styles as the hover selector */
+.cards .card.hover {
+transition: all 0.2s ease-out;
+box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.3);
+top: -4px;
+background-color: #efefef;
+}
