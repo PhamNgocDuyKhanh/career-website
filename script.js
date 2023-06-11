@@ -1,30 +1,4 @@
-  // Photo slider
-      const mySwiper = new Swiper('.swiper-container', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-          speed: 300,
-          mousewheel: true,
-          coverflowEffect: {
-            rotate: 30,
-            slideShadows: true
-          },
-          // pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          // Slider scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        })
-        
- // Darkmode function
+// Darkmode function
         const checkbox = document.querySelector('.checkbox');
         checkbox.addEventListener('change', function() {
           document.body.classList.toggle('dark');
@@ -64,3 +38,28 @@
             }
           }
         }
+  // Photo slider
+      const mySwiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          speed: 300,
+          mousewheel: true,
+          coverflowEffect: {
+            rotate: 30,
+            slideShadows: true
+          },
+          // pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          // Slider scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        })
