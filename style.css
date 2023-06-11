@@ -106,12 +106,31 @@
       nav ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 2vh;
         overflow: hidden;
       }
 
       nav li {
         display: inline;
+        position: relative;
+      }
+      nav li::before {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      height: 2.5px;
+      background-color: white;
+      width: 0;
+      transition: 0.3s;
+      }
+
+      nav li:hover {
+      opacity: 0.8;
+      }
+
+      nav li:hover::before {
+      width: 100%;
       }
 
       nav a {
