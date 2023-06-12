@@ -142,7 +142,7 @@
 
       #banner {
         position: relative;
-        background-image: url("https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-6/308807935_3202311369990993_4275131802074168976_n.png?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=hJd_mqzITY8AX-QHgpR&_nc_ht=scontent.fsgn4-1.fna&oh=00_AfACq18BBSAsgeR_bNGJk8Wcnr31AbBiCtIKt9ZMIdu0ZA&oe=6485A781");
+        background-image: url("images/bg-img.png");
         background-size: cover;
         height: 110vh;
         display: flex;
