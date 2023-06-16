@@ -38,28 +38,27 @@
             }
           }
         }
-  // Photo slider
-      const mySwiper = new Swiper('.swiper-container', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-          speed: 300,
-          mousewheel: true,
-          coverflowEffect: {
-            rotate: 30,
-            slideShadows: true
-          },
-          // pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          // Slider scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-        })
+
+// Carousel Slider 
+  const carouselInner = document.getElementById('carousel-inner');
+  const carouselIndicators = document.getElementById('carousel-indicators');
+  const carouselItems = carouselInner.getElementsByClassName('item');
+
+  for (let i = 0; i < carouselItems.length; i++) {
+    const indicator = document.createElement('li');
+    indicator.setAttribute('data-target', '#myCarousel');
+    indicator.setAttribute('data-slide-to', i.toString());
+    if (i === 0) {
+      indicator.classList.add('active');
+    }
+    carouselIndicators.appendChild(indicator);
+  }
+
+// CV submit form 
+  function showForm() {
+    var formContainer = document.getElementById("formContainer");
+    var applyNowButton = document.getElementsByClassName("apply-now-button")[0];
+    
+    formContainer.style.display = "block";
+    applyNowButton.style.display = "none";
+  }
