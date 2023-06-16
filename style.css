@@ -14,7 +14,7 @@
         -webkit-backdrop-filter: blur(5px);
       }
 
-      header .container {
+      header .header-container {
         margin: 0 auto;
         padding: 0 1.3em;
       }
@@ -30,7 +30,7 @@
         height: 40px;
       }
 
-      footer .container {
+      footer .footer-container {
         margin: 0 auto;
         padding: 0 0.6em;
       }
@@ -40,7 +40,7 @@
       }
 
       /* Add table style for hiring process */
-      .container {
+       .table-container {
         margin: 0 auto;
       }
 
@@ -64,18 +64,17 @@
         background-color: #25b3c3;
       }
 
-      .container table tr {
+      .table-container table tr {
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
         position: relative;
       }
-
-      .container table tr:hover {
+      .table-container table tr:hover {
         background-color: #99d5dd;
         color: #333;
         opacity: 0.8;
       }
 
-      .container table tr:before {
+      .table-container table tr:before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -87,14 +86,15 @@
         transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
       }
 
-      .container table tr:hover:before {
+      .table-container table tr:hover:before {
         transform: scaleX(1);
         background-color: #ff3067;
       }
 
-      .container table tr h4 {
+      .table-container table tr h4 {
         margin-bottom: 0.3125em;
       }
+
 
       /* Add Apple-inspired CSS styles */
       body {
@@ -103,18 +103,27 @@
         padding: 0;
       }
 
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 2vh;
-        overflow: hidden;
+      <nav class="nav my-nav">
+      </nav>
+
+      .my-nav {
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
       }
 
-      nav li {
-        display: inline;
-        position: relative;
+      .my-nav ul {
+      list-style-type: none;
+      margin: 2vh;
+      overflow: hidden;
       }
-      nav li::before {
+
+      .my-nav li {
+      display: inline;
+      position: relative;
+      }
+
+      .my-nav li::before {
       content: "";
       position: absolute;
       bottom: -6px;
@@ -125,50 +134,24 @@
       transition: 0.3s;
       }
 
-      nav li:hover {
-      opacity: 0.8;
-      }
-
-      nav li:hover::before {
+      .my-nav li:hover::before {
       width: 100%;
+      left: 25%; 
+      transition: 0.3s;
       }
 
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 0.625em;
-        font-size: 1em;
+      .my-nav a {
+      color: #b9babb;
+      text-decoration: none;
+      padding: 0.625em;
+      font-size: 1.1em;
+      margin: 0 1.5em;
       }
-
-      #banner {
-        position: relative;
-        background-image: url("images/bg-img.png");
-        background-size: cover;
-        height: 110vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        text-align: center;
-      }
-
-      #banner::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(2px);
-        z-index: 1;
-      }
-
-      #banner .container {
-        position: relative;
-        z-index: 2;
+      .my-nav a:hover {
+      text-shadow: 0 0 15px #fff; 
+      transition: text-shadow 0.3s ease; 
+      font-weight: bold;
+      color: #fff;  
       }
 
       #about,
@@ -201,6 +184,37 @@
         justify-content: center;
       }
 
+      #banner {
+        position: relative;
+        background-image: url("images/bg-img.png");
+        background-size: cover;
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      #banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        z-index: 1;
+      }
+
+      #banner .banner-container {
+        position: relative;
+        z-index: 2;
+      }
+
       h1,
       h2,
       h3,
@@ -218,9 +232,16 @@
         font-size: 2em;
       }
 
-      p {
-        margin-bottom: 0.9375em;
+      p.headline {
+        margin-bottom: 1em;
         text-align: center;
+        font-size: 1.2em;
+      }
+
+      p.body-p {
+        margin-bottom: 1em;
+        text-align: center;
+        font-size: 1em;
       }
 
       ul,
@@ -241,6 +262,10 @@
         color: #fff;
         overflow: hidden;
         margin-bottom: 8vh;
+      }
+
+      .intro-container {
+        width: 100%;
       }
 
       @media (min-width: 1024px) {
@@ -326,7 +351,7 @@
         }
 
         .cards .card p.second-text {
-          font-size: .9em;
+          font-size: 1em;
           text-align: justify;
         }
 
@@ -439,37 +464,6 @@
           font-size: .9em;
           text-align: justify;
         }
-      }
-
-      /* Swiper Slider styles */
-      body {
-        margin: 0;
-      }
-
-      #photo-slider {
-        position: relative;
-      }
-
-      .swiper-container {
-        width: 100%;
-        height: 90vh;
-        overflow: hidden;
-      }
-
-      .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position:center;
-      }
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        --swiper-navigation-color: rgb(255, 255, 255, 0.8);
-      }
-
-      .swiper-pagination {
-        --swiper-pagination-color: rgb(255, 255, 255, 0.8);
       }
 
       /* Dark Mode styles */
@@ -588,11 +582,12 @@
         background-position: 20px center;
         background-repeat: no-repeat;
         width: 80%;
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 12px 0 12px 50px;
         border: 1px solid #ddd;
         margin-bottom: 8vh;
         background-size: 25px;
+        color: black;
       }
 
       #myInput:hover {
@@ -601,7 +596,7 @@
 
       #myjobsTable {
         border-collapse: collapse;
-        margin: 0 auto;
+        margin: 8vh auto;
         font-size: 1em;
         width: 50%;
       }
@@ -617,6 +612,75 @@
         background-color: #99d5dd;
         opacity: 0.9;
         text-align: left;
+      }
+
+
+      /* Apply Now button */
+      .apply-now-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      /* Apply Now button hover effect */
+      .apply-now-button:hover {
+        background-color: #45a049;
+      }
+
+      /* Form container */
+      .form-container {
+        display: none;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Form labels */
+      .form-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      /* Form input fields */
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: inherit;
+      }
+
+      /* Form file input field */
+      .form-container input[type="file"] {
+        margin-top: 4px;
+      }
+
+      /* Form submit button */
+      .form-container input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      /* Form submit button hover effect */
+      .form-container input[type="submit"]:hover {
+        background-color: #45a049;
       }
 
       * {
