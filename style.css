@@ -596,7 +596,7 @@
 
       #myjobsTable {
         border-collapse: collapse;
-        margin: 8vh auto;
+        margin: 1vh auto;
         font-size: 1em;
         width: 50%;
       }
@@ -617,19 +617,60 @@
 
       /* Apply Now button */
       .apply-now-button {
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        margin-bottom: 20px;
+       position: relative;
+       margin: 8vh auto;
+       padding: 12px 18px;
+       transition: all 0.2s ease;
+       border: none;
+       background: none;
       }
 
-      /* Apply Now button hover effect */
-      .apply-now-button:hover {
-        background-color: #45a049;
+      .apply-now-button:before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: block;
+       border-radius: 50px;
+       background: #b1dae7;
+       width: 45px;
+       height: 45px;
+       transition: all 0.3s ease;
+      }
+
+      .apply-now-button span {
+       position: relative;
+       font-family: "Ubuntu", sans-serif;
+       font-size: 18px;
+       font-weight: 700;
+       letter-spacing: 0.05em;
+       color: #234567;
+      }
+
+      .apply-now-button svg {
+       position: relative;
+       top: 0;
+       margin-left: 10px;
+       fill: none;
+       stroke-linecap: round;
+       stroke-linejoin: round;
+       stroke: #234567;
+       stroke-width: 2;
+       transform: translateX(-5px);
+       transition: all 0.3s ease;
+      }
+
+      .apply-now-button:hover:before {
+       width: 100%;
+       background: #b1dae7;
+      }
+
+      .apply-now-button:hover svg {
+       transform: translateX(0);
+      }
+
+      .apply-now-button:active {
+       transform: scale(0.95);
       }
 
       * {
