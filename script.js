@@ -54,3 +54,17 @@
     carouselIndicators.appendChild(indicator);
   }
 
+// CV Submit
+function openEmailClient() {
+  var position = "Job Position"; // Replace with the actual position value
+  var name = "John Doe"; // Replace with the actual name value
+  var email = "john.doe@example.com"; // Replace with the actual email value
+  var message = "Hello, I'm interested in applying for the job."; // Replace with the actual message value
+  
+  var subject = encodeURIComponent("Application for " + position);
+  var body = encodeURIComponent("Name: " + name + "%0AEmail: " + email + "%0AMessage: " + message);
+  
+  var mailtoLink = "mailto:khanh.phamngocduy@positivethinking.tech?subject=" + subject + "&body=" + body;
+  
+  window.location.href = mailtoLink;
+}
