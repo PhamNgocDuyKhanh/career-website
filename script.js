@@ -54,11 +54,3 @@
     carouselIndicators.appendChild(indicator);
   }
 
-// CV submit form 
-  function showForm() {
-    var formContainer = document.getElementById("formContainer");
-    var applyNowButton = document.getElementsByClassName("apply-now-button")[0];
-    
-    formContainer.style.display = "block";
-    applyNowButton.style.display = "none";
-  }
