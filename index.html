@@ -130,30 +130,8 @@
           </table>
 
            <div style="text-align:center">
-            <button class="apply-now-button" onclick="showForm()">Apply Now</button>
+            <button class="apply-now-button" onclick="window.open('mailto:khanh.phamngocduy@positivethinking.tech?subject=Application for ' + position + '&body=Name: ' + name + '%0AEmail: ' + email + '%0AMessage: ' + message);">Apply now</button>
           </div> 
-
-          <div id="formContainer" class="form-container">
-            <form action="submit_cv.php" method="POST" enctype="multipart/form-data">
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" required>
-              <br>
-
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" required>
-              <br>
-
-              <label for="message">Message:</label>
-              <textarea name="message" id="message"></textarea>
-              <br>
-
-              <label for="cv">Upload CV:</label>
-              <input type="file" name="cv" id="cv" required accept=".pdf,.doc,.docx">
-              <br>
-
-              <input type="submit" value="Submit">
-            </form>
-          </div>
           
           <h2>Hiring Process</h2>
           <p class="body-p">If you're interested in any of the positions, please follow the application process below:</p>
