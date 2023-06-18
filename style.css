@@ -372,16 +372,17 @@
         }
 
         h1 {
-          font-size: 1.75em;
+          font-size: 1.8em;
         }
 
         h2 {
-          font-size: 1.25em;
+          font-size: 1.5em;
         }
 
-        nav a {
+        .my-nav a {
           font-size: 0.875em;
           padding: 0.5em;
+          margin: 0.35em;
         }
 
         p {
