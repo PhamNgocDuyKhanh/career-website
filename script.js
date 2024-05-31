@@ -1,5 +1,6 @@
 // Darkmode function
         const checkbox = document.querySelector('.checkbox');
+        checkbox.click();
         checkbox.addEventListener('change', function() {
           document.body.classList.toggle('dark');
           // Update text color of the banner section
