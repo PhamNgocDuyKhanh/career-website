@@ -1,6 +1,6 @@
 // Darkmode function
-        const checkbox = document.querySelector('.checkbox');
-        checkbox.click();
+/*/       const checkbox = document.querySelector('.checkbox');
+//        checkbox.click();
         checkbox.addEventListener('change', function() {
           document.body.classList.toggle('dark');
           // Update text color of the banner section
@@ -18,8 +18,35 @@
               });
             });
           });
-        });
-        
+        }); 
+        */
+document.addEventListener('DOMContentLoaded', function() {
+  // Set dark mode as default
+  document.body.classList.add('dark');
+  const bannerText = document.getElementById('banner');
+  bannerText.classList.add('dark');
+
+  // Add event listener to the checkbox for toggling dark mode
+  const checkbox = document.querySelector('.checkbox');
+  checkbox.addEventListener('change', function() {
+    document.body.classList.toggle('dark');
+    bannerText.classList.toggle('dark');
+  });
+
+  // Add event listener to all toggle checkboxes
+  const checkboxes = document.querySelectorAll('.toggle');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', function() {
+      checkboxes.forEach((c) => {
+        if (c !== this) {
+          c.checked = false;
+        }
+      });
+    });
+  });
+});
+
+
 // Job search function
         function myFunction() {
           var input, filter, table, tr, td, i, txtValue;
