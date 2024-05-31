@@ -565,6 +565,9 @@
       .checkbox:checked+.checkbox-label .ball {
         transform: translateX(1.5em);
       }
+      .dark .apply-now-button span {
+        color: #fff; 
+      }
 
       /* table filter */
       * {
