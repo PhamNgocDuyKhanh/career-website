@@ -108,11 +108,11 @@ function myFunction() {
 // Back to Top Button
 const topBtn = document.getElementById("topBtn");
 
-if (topBtn) {
-  window.addEventListener("scroll", () => {
-    topBtn.style.display = window.scrollY > 200 ? "block" : "none";
-  });
-}
+window.addEventListener("scroll", () => {
+  if (!topBtn) return;
+
+  topBtn.classList.toggle("show", window.scrollY > 200);
+});
 
 function topFunction() {
   window.scrollTo({
