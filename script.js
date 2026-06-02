@@ -105,6 +105,22 @@ function myFunction() {
     carouselIndicators.appendChild(indicator);
   }
 
+// Back to Top Button
+const topBtn = document.getElementById("topBtn");
+
+if (topBtn) {
+  window.addEventListener("scroll", () => {
+    topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  });
+}
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
 // CV Submit
 function openEmailClient() {
   var position = "Job Position"; // Replace with the actual position value
