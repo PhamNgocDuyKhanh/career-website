@@ -684,7 +684,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 #topBtn {
   position: fixed;
   bottom: 24px;
@@ -698,19 +697,18 @@ html {
   justify-content: center;
 
   border-radius: 50%;
-
   cursor: pointer;
 
-  color: #ffffff;
+  /* LIGHT MODE DEFAULT */
+  background: rgba(0, 0, 0, 0.10);
+  color: #111;
 
-  /* DARK MODE DEFAULT (glass look) */
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
   opacity: 0;
   visibility: hidden;
@@ -729,15 +727,74 @@ html {
 /* hover */
 #topBtn:hover {
   transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* click effect */
+/* click */
 #topBtn:active {
   transform: scale(0.95);
 }
 
+/* DARK MODE  */
+.dark #topBtn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+/* #topBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.25s ease;
+}
+
+#topBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+#topBtn:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+#topBtn:active {
+  transform: scale(0.95);
+} 
+
+*/
 /* LIGHT MODE FIX (important for visibility) 
 @media (prefers-color-scheme: light) {
   #topBtn {
@@ -769,18 +826,4 @@ html {
   }
 }
 */
-@media (prefers-color-scheme: light) {
-  #topBtn {
-    background: rgba(0, 0, 0, 0.10);
-    color: #111;
 
-    border: 1px solid rgba(0, 0, 0, 0.15);
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  }
-
-  #topBtn:hover {
-    background: rgba(0, 0, 0, 0.14);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
-  }
-}
