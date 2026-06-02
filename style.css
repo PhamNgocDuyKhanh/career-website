@@ -697,20 +697,19 @@ html {
   align-items: center;
   justify-content: center;
 
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
 
-  background: rgba(20, 20, 20, 0.85);
-  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
 
   cursor: pointer;
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-  /* hidden by default */
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -725,8 +724,27 @@ html {
   transform: translateY(0);
 }
 
-/* hover effect */
+/* hover */
 #topBtn:hover {
   transform: scale(1.08);
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* click feedback */
+#topBtn:active {
+  transform: scale(0.95);
+}
+
+/* light mode support */
+@media (prefers-color-scheme: light) {
+  #topBtn {
+    background: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  #topBtn:hover {
+    background: rgba(0, 0, 0, 0.85);
+  }
 }
