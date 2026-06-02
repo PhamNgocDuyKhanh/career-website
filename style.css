@@ -680,3 +680,27 @@
       * {
         scroll-behavior: smooth;
       }
+/* Back to Top Button */
+html {
+  scroll-behavior: smooth;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#topBtn:hover {
+  background-color: #0056b3;
+}
