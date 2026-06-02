@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// Job search function
+/*
+// Job search function (temporary skip this)
         function myFunction() {
           var input, filter, table, tr, td, i, txtValue;
           input = document.getElementById("myInput");
@@ -66,6 +66,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
           }
         }
+*/
+// Job search funtion (using this table filter for job search)
+function myFunction() {
+  const input = document.getElementById("myInput");
+  const filter = input.value.toUpperCase();
+  const table = document.getElementById("myjobsTable");
+  const rows = table.getElementsByTagName("tr");
+
+  for (let i = 0; i < rows.length; i++) {
+    const cells = rows[i].getElementsByTagName("td");
+    let match = false;
+
+    for (let j = 0; j < cells.length; j++) {
+      const text = cells[j].textContent.toUpperCase();
+      if (text.includes(filter)) {
+        match = true;
+        break;
+      }
+    }
+
+    rows[i].style.display = match ? "" : "none";
+  }
+}
 
 // Carousel Slider 
   const carouselInner = document.getElementById('carousel-inner');
