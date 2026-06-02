@@ -710,6 +710,7 @@ html {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
+  /* hidden by default */
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -717,6 +718,14 @@ html {
   transition: all 0.25s ease;
 }
 
+/* visible state */
+#topBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* hover effect */
 #topBtn:hover {
   transform: scale(1.08);
   background: rgba(0, 0, 0, 0.95);
